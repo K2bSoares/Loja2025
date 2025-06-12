@@ -1,0 +1,88 @@
+/* Container principal */
+.pedidos-historico {
+  max-width: 900px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  padding: 40px 30px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+}
+
+/* Título */
+.pedidos-historico h3 {
+  font-weight: 700;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Spinner */
+.pedidos-historico .spinner-border {
+  color: #999;
+}
+
+/* Mensagem de alerta */
+.pedidos-historico .alert-info {
+  border: 2px solid #d97706;
+  background-color: #fff7ed;
+  color: #b45309;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Accordion item */
+.pedidos-historico .accordion-item {
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Botão do accordion */
+.pedidos-historico .accordion-button {
+  background-color: #fdfdfd;
+  font-weight: 600;
+  color: #1f1f1f;
+  padding: 1rem;
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+.pedidos-historico .accordion-button:not(.collapsed) {
+  background-color: #fff7ed;
+  color: #b45309;
+}
+
+/* Corpo do accordion */
+.pedidos-historico .accordion-body {
+  background-color: #ffffff;
+  padding: 1.25rem;
+}
+
+/* Título interno */
+.pedidos-historico .accordion-body h6 {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+/* Lista de produtos */
+.pedidos-historico .list-group-item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Badge de valor */
+.pedidos-historico .badge {
+  background-color: #d97706;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Texto verde de total */
+.pedidos-historico .text-success {
+  color: #15803d !important;
+  font-weight: 700;
+}
