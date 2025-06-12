@@ -1,55 +1,63 @@
-/* Container da recuperação */
+/* Container da recuperação de senha */
 .recuperar-senha {
   max-width: 450px;
   background-color: #fff;
-  border: 2px solid #ccc;
+  border: 2px solid #EADCFE; /* Borda cinza trocada pelo tom lavanda suave */
   padding: 30px;
   border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 15px rgba(74, 35, 90, 0.08); /* Sombra sutil com um toque de roxo */
 }
 
 /* Título */
 .recuperar-senha h3 {
   font-weight: bold;
-  color: #1f1f1f;
+  color: #4A235A; /* Cor alinhada ao roxo escuro da paleta */
   text-transform: uppercase;
+  text-align: center; /* Centralizado para melhor estética */
+  margin-bottom: 25px; /* Adicionado espaço abaixo do título */
 }
 
 /* Label */
 .recuperar-senha .form-label {
   font-weight: 600;
-  color: #333;
+  color: #4A235A; /* Cor alinhada ao roxo escuro */
 }
 
 /* Input */
 .recuperar-senha .form-control {
-  border: 2px solid #aaa;
+  border: 2px solid #EADCFE; /* Borda sutil de lavanda */
   border-radius: 3px;
   font-weight: 500;
+  transition: border-color 0.3s ease;
 }
 
 .recuperar-senha .form-control:focus {
-  border-color: #d97706;
+  border-color: #8A4FFF; /* Foco com o roxo principal */
   box-shadow: none;
 }
 
-/* Alerta */
+/* Alerta informativo */
 .alert-info {
-  background-color: #e3f2fd;
-  border-left: 5px solid #d97706;
-  color: #d97706;
+  background-color: #F4F0FF; /* Fundo lilás bem claro */
+  border-left: 5px solid #8A4FFF; /* Destaque com o roxo principal */
+  color: #4A235A; /* Texto em roxo escuro para contraste */
   font-weight: 500;
+  border-radius: 3px;
+  padding: 12px;
 }
 
 /* Botão "Reenviar lembrete de senha" */
 .btn-reenviar {
-  background-color: #d97706;
+  background-color: #E54F6D; /* Ação principal com o rosa vibrante */
   border: none;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
+  width: 100%; /* Ocupa a largura total para dar mais destaque */
+  padding: 12px; /* Aumenta a área de clique */
+  transition: background-color 0.3s ease;
 }
 
 .btn-reenviar:hover {
-  background-color: #b45309;
+  background-color: #C93756; /* Hover para o rosa mais escuro */
 }

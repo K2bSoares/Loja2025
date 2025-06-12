@@ -1,54 +1,48 @@
-/* Container detalhe do produto */
-.detalhe-produto h3 {
-  font-weight: 700;
-  color: #1f1f1f; /* preto suave */
-  text-transform: uppercase;
-}
-
-
-/* Alerta */
-.alert-info {
-  background-color: #e3f2fd;
-  border-left: 5px solid #1f1f1f;
-  color: #1f1f1f;
-  font-weight: 500;
-}
-
 /* Título do produto */
 .detalhe-produto h3 {
   font-weight: 700;
-  color: #2e3e4e; /* tom de azul escuro mais sóbrio */
+  color: #4A235A; /* Cor alinhada ao roxo escuro da paleta */
   text-transform: uppercase;
 }
 
-/* Descritivo */
+/* Alerta informativo (ex: "Fragrância premiada") */
+.alert-info {
+  background-color: #F4F0FF; /* Fundo lilás bem claro */
+  border-left: 5px solid #8A4FFF; /* Destaque com o roxo principal */
+  color: #4A235A; /* Texto em roxo escuro para contraste */
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 12px;
+}
+
+/* Descritivo do produto */
 .detalhe-produto p {
   font-size: 1rem;
-  color: #555;
+  color: #614d69; /* Um tom mais suave do roxo escuro para o texto corrido */
   font-weight: 500;
   margin-bottom: 1.5rem;
 }
 
-/* Imagem */
+/* Imagem do produto */
 .detalhe-produto img {
-  border: 2px solid #ddd;
+  border: 2px solid #EADCFE; /* Borda suave de lavanda */
   max-height: 300px;
   object-fit: contain;
-  background-color: #f9f9f9;
+  background-color: #fff; /* Fundo branco para destacar o produto */
   padding: 8px;
   border-radius: 6px;
 }
 
-/* Preço disponível */
+/* Preço quando disponível (substituindo o laranja) */
 .text-success {
   font-size: 1.5rem;
-  color: #d97706 !important; /* laranja industrial forte */
+  color: #E54F6D !important; /* Rosa vibrante para atrair atenção ao preço */
   font-weight: 700;
 }
 
-/* Sem estoque */
+/* Mensagem de "Sem estoque" (substituindo o vermelho) */
 .text-danger {
   font-size: 1.3rem;
-  color: #c00 !important;
+  color: #A33A52 !important; /* Tom de vinho/bordô para indicar indisponibilidade */
   font-weight: 700;
 }

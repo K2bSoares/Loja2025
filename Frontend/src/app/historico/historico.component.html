@@ -18,7 +18,7 @@
           <div class="d-flex justify-content-between w-100 pe-3">
             <span><strong>Pedido #{{ pedido.id }}</strong></span>
             <span>Data: {{ pedido.data | date:'dd/MM/yyyy' }}</span>
-            <span class="text-success fw-bold">Total: R$ {{ pedido.total.toFixed(2) }}</span>
+            <span class="text-success fw-bold">Total: R$ {{ pedido.total | number:'1.2-2' }}</span>
           </div>
         </button>
       </h2>
@@ -31,7 +31,7 @@
                 <strong>{{ produto.nome }}</strong><br>
                 <small class="text-muted">Quantidade: {{ produto.quantidade }}</small>
               </div>
-              <span class="badge bg-primary rounded-pill">R$ {{ (produto.valor * produto.quantidade).toFixed(2) }}</span>
+              <span class="badge bg-primary rounded-pill">R$ {{ (produto.valor * produto.quantidade) | number:'1.2-2' }}</span>
             </li>
           </ul>
         </div>

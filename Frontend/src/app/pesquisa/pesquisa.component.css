@@ -6,43 +6,46 @@
 
 /* Campo de texto */
 .pesquisa-box .form-control {
-  border: 2px solid #aaa;
+  border: 2px solid #EADCFE; /* Trocado para uma borda suave de lavanda */
   border-right: none;
   border-radius: 3px 0 0 3px;
   font-weight: 500;
   background-color: #fff;
-  color: #333;
+  color: #4A235A; /* Cor do texto alinhada ao padrão roxo escuro */
+  transition: border-color 0.3s ease; /* Adicionado para transição suave */
 }
 
 .pesquisa-box .form-control:focus {
-  border-color: #d97706;
+  border-color: #8A4FFF; /* Foco agora usa o roxo principal */
   box-shadow: none;
 }
 
-/* Botão "OK" */
+/* Botão "OK" (Ação Principal) */
 .pesquisa-box .btn-primary {
-  background-color: #d97706;
-  border: 2px solid #d97706;
+  background-color: #E54F6D; /* Laranja substituído pelo rosa vibrante */
+  border: 2px solid #E54F6D; /* Borda alinhada com a nova cor */
   color: #fff;
   font-weight: 600;
   border-radius: 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Transição suave */
 }
 
 .pesquisa-box .btn-primary:hover {
-  background-color: #b45309;
-  border-color: #b45309;
+  background-color: #C93756; /* Hover para o tom de rosa mais escuro */
+  border-color: #C93756;
 }
 
-/* Botão "Limpar" */
+/* Botão "Limpar" (Ação Secundária) */
 .pesquisa-box .btn-secondary {
-  background-color: #555;
-  border: 2px solid #555;
+  background-color: #8A4FFF; /* Cinza substituído pelo roxo principal */
+  border: 2px solid #8A4FFF; /* Borda alinhada com a nova cor */
   color: #fff;
   font-weight: 600;
   border-radius: 0 3px 3px 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Transição suave */
 }
 
 .pesquisa-box .btn-secondary:hover {
-  background-color: #333;
-  border-color: #333;
+  background-color: #702EFF; /* Hover para o tom de roxo mais escuro */
+  border-color: #702EFF;
 }

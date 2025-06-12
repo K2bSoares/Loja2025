@@ -1,36 +1,41 @@
+/* Container do formulário de cadastro */
 .cadastro-cliente {
-  border: 2px solid #ccc;
+  border: 2px solid #EADCFE; /* Borda suave de lavanda */
   border-radius: 6px;
   background-color: #fff;
   padding: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(74, 35, 90, 0.08); /* Sombra sutil com tom de roxo */
 }
 
 /* Título */
 .cadastro-cliente h3 {
-  color: #1f2937; /* cinza escuro */
+  color: #4A235A; /* Roxo escuro para o título */
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 /* Inputs */
 .cadastro-cliente .form-control {
   border-radius: 4px;
-  border: 1px solid #bbb;
+  border: 2px solid #EADCFE; /* Borda suave de lavanda (aumentada para 2px para consistência) */
   transition: border-color 0.2s;
 }
 
 .cadastro-cliente .form-control:focus {
-  border-color: #d97706;
+  border-color: #8A4FFF; /* Foco com o roxo principal */
   box-shadow: none;
 }
 
-/* Alerta */
+/* Alerta de sucesso (ex: "Cadastro realizado!") */
 .cadastro-cliente .alert {
-  background-color: #dcfce7;
-  color: #000000;
-  border: 1px solid #bbf7d0;
+  background-color: #FFEBF0; /* Fundo rosa bem claro */
+  color: #4A235A; /* Texto em roxo escuro para ótima legibilidade */
+  border: 1px solid #E54F6D; /* Borda com o rosa vibrante */
+  border-left: 5px solid #E54F6D; /* Destaque na lateral */
   font-weight: 500;
+  border-radius: 4px;
 }
 
 /* Botão Gravar */
@@ -38,13 +43,17 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  border: none;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Ocupa a largura total para dar mais destaque */
+  padding: 12px;
 }
 
 .cadastro-cliente .btn-success {
-  background-color: #d97706; /* verde escuro */
-  border: none;
+  background-color: #E54F6D; /* Rosa vibrante para a ação de "salvar" */
+  color: #fff;
 }
 
 .cadastro-cliente .btn-success:hover {
-  background-color: #d97706;
+  background-color: #C93756; /* Hover para o rosa mais escuro */
 }

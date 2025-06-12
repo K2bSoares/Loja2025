@@ -2,17 +2,19 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa; /* cinza claro do Bootstrap */
-  color: #212529; /* cor padrão do Bootstrap */
+  background-color: #FDF7FF; /* Fundo cinza trocado por um branco com toque de lavanda */
+  color: #4A235A; /* Cor padrão do texto trocada para o roxo escuro da paleta */
 }
 
-/* Personalizar links com cores do Bootstrap */
+/* Personalizar links com a nossa paleta */
 a {
-  color: #0d6efd;
+  color: #8A4FFF; /* Cor padrão dos links agora é o roxo principal */
+  text-decoration: none; /* Removido o sublinhado padrão para um visual mais limpo */
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #0a58ca;
+  color: #702EFF; /* Cor de hover para um roxo mais intenso */
   text-decoration: underline;
 }
 
@@ -23,15 +25,25 @@ a:hover {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/*
+  NOTA: Adicione esta regra para o seu botão primário base,
+  para que o hover funcione corretamente.
+*/
+.btn-primary {
+  background-color: #E54F6D;
+  color: #fff;
+  border: none;
+}
+
 .btn-primary:hover {
-  background-color: #0a58ca;
-  box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
+  background-color: #C93756; /* Hover para o rosa mais escuro */
+  box-shadow: 0 0 10px rgba(229, 79, 109, 0.5); /* Sombra no tom do rosa vibrante */
 }
 
 /* Inputs com foco personalizado */
 .form-control:focus {
-  border-color: #0d6efd;
-  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  border-color: #8A4FFF; /* Borda de foco com o roxo principal */
+  box-shadow: 0 0 0 0.2rem rgba(138, 79, 255, 0.25); /* Sombra de foco com o roxo principal transparente */
 }
 
 /* Container padrão para centralizar e limitar largura */
@@ -39,7 +51,7 @@ a:hover {
   max-width: 1140px;
 }
 
-/* Responsividade já gerenciada pelo Bootstrap, mas pode personalizar */
+/* Responsividade já gerenciada, mas pode personalizar */
 @media (max-width: 768px) {
   body {
     font-size: 14px;

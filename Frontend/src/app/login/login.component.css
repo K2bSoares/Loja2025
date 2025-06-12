@@ -2,80 +2,89 @@
 .login-container {
   max-width: 450px;
   background-color: #fff;
-  border: 2px solid #ccc;
+  border: 2px solid #EADCFE; /* Borda cinza trocada pelo tom lavanda suave */
   padding: 30px;
   border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 15px rgba(74, 35, 90, 0.08); /* Sombra sutil com um toque de roxo */
 }
 
 /* Título */
 .login-container h3 {
   font-weight: bold;
-  color: #1f1f1f;
+  color: #4A235A; /* Cor alinhada ao roxo escuro da paleta */
   text-transform: uppercase;
+  text-align: center; /* Centralizado para melhor estética */
+  margin-bottom: 25px; /* Adicionado espaço abaixo do título */
 }
 
 /* Labels */
 .login-container .form-label {
   font-weight: 600;
-  color: #333;
+  color: #4A235A; /* Cor alinhada ao roxo escuro */
 }
 
 /* Inputs */
 .login-container .form-control {
-  border: 2px solid #aaa;
+  border: 2px solid #EADCFE; /* Borda sutil de lavanda */
   border-radius: 3px;
   font-weight: 500;
+  transition: border-color 0.3s ease;
 }
 
 .login-container .form-control:focus {
-  border-color: #d97706;
+  border-color: #8A4FFF; /* Foco com o roxo principal */
   box-shadow: none;
 }
 
-/* Alerta de mensagem */
+/* Alerta de mensagem (novo estilo) */
 .alert-warning {
-  background-color: #fff3cd;
-  border-left: 5px solid #d97706;
-  color: #856404;
+  background-color: #FFEBF0; /* Fundo rosa bem claro */
+  border-left: 5px solid #E54F6D; /* Destaque com o rosa vibrante */
+  color: #C93756; /* Texto em rosa escuro para legibilidade */
   font-weight: 500;
+  border-radius: 3px;
+  padding: 12px;
 }
 
-/* Botão "Entrar" */
+/* Botão "Entrar" (Ação Primária) */
 .btn-entrar {
-  background-color: #1f1f1f;
+  background-color: #E54F6D; /* Ação principal com o rosa vibrante */
   color: #fff;
   border: none;
   font-weight: 600;
   text-transform: uppercase;
+  transition: background-color 0.3s ease;
 }
 
 .btn-entrar:hover {
-  background-color: #000;
+  background-color: #C93756; /* Hover para o rosa mais escuro */
 }
 
-/* Botão "Esqueci minha senha" */
+/* Botão "Esqueci minha senha" (Ação Secundária) */
 .btn-esqueci {
-  background-color: #d97706;
+  background-color: #8A4FFF; /* Ação secundária com o roxo principal */
   color: #fff;
   border: none;
   font-weight: 600;
   text-transform: uppercase;
+  transition: background-color 0.3s ease;
 }
 
 .btn-esqueci:hover {
-  background-color: #b45309;
+  background-color: #702EFF; /* Hover para o roxo mais escuro */
 }
 
-/* Botão "Ainda não tenho cadastro" */
+/* Botão "Ainda não tenho cadastro" (Ação Alternativa) */
 .btn-cadastro {
-  background-color: #555;
-  color: #fff;
+  background-color: transparent; /* Fundo transparente para um estilo "vazado" */
+  color: #8A4FFF; /* Texto no roxo principal */
   font-weight: 600;
-  border: none;
+  border: 2px solid #8A4FFF; /* Borda no roxo principal */
   text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-cadastro:hover {
-  background-color: #333;
+  background-color: #8A4FFF; /* Ao passar o mouse, o fundo preenche */
+  color: #fff; /* E o texto fica branco */
 }

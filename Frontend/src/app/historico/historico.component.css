@@ -2,87 +2,99 @@
 .pedidos-historico {
   max-width: 900px;
   background-color: #fff;
-  border: 2px solid #ccc;
+  border: 2px solid #EADCFE; /* Borda cinza trocada pelo tom lavanda suave */
   padding: 40px 30px;
   border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 15px rgba(74, 35, 90, 0.08); /* Sombra sutil com um toque de roxo */
 }
 
 /* Título */
 .pedidos-historico h3 {
   font-weight: 700;
-  color: #1f1f1f;
+  color: #4A235A; /* Cor alinhada ao roxo escuro da paleta */
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-/* Spinner */
+/* Spinner de carregamento */
 .pedidos-historico .spinner-border {
-  color: #999;
+  color: #8A4FFF; /* Cor do spinner alinhada ao roxo principal */
 }
 
-/* Mensagem de alerta */
+/* Mensagem de alerta informativo (estilo roxo) */
 .pedidos-historico .alert-info {
-  border: 2px solid #d97706;
-  background-color: #fff7ed;
-  color: #b45309;
+  border-left: 5px solid #8A4FFF; /* Borda de destaque roxa */
+  background-color: #F4F0FF; /* Fundo lilás bem claro */
+  color: #4A235A; /* Texto em roxo escuro para contraste */
   font-weight: 600;
   text-align: center;
+  border-radius: 3px;
+  padding: 12px;
 }
 
-/* Accordion item */
+/* Accordion item (cada pedido) */
 .pedidos-historico .accordion-item {
-  border: 2px solid #ccc;
+  border: 2px solid #EADCFE; /* Borda suave de lavanda */
   border-radius: 6px;
   margin-bottom: 1rem;
+  overflow: hidden; /* Garante que o border-radius seja aplicado corretamente */
 }
 
-/* Botão do accordion */
+/* Botão do accordion (cabeçalho do pedido) */
 .pedidos-historico .accordion-button {
   background-color: #fdfdfd;
   font-weight: 600;
-  color: #1f1f1f;
+  color: #4A235A; /* Texto em roxo escuro */
   padding: 1rem;
   border: none;
-  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
 }
 
+/* Estilo do botão do accordion quando está aberto */
 .pedidos-historico .accordion-button:not(.collapsed) {
-  background-color: #fff7ed;
-  color: #b45309;
+  background-color: #F4F0FF; /* Fundo lilás suave para indicar estado ativo */
+  color: #702EFF; /* Cor de texto roxo intenso para destaque */
+  box-shadow: none; /* Remove a sombra padrão do bootstrap */
 }
 
-/* Corpo do accordion */
+.pedidos-historico .accordion-button:focus {
+  box-shadow: none; /* Remove a sombra de foco padrão */
+}
+
+/* Corpo do accordion (detalhes do pedido) */
 .pedidos-historico .accordion-body {
   background-color: #ffffff;
   padding: 1.25rem;
+  border-top: 1px solid #EADCFE; /* Linha sutil para separar do cabeçalho */
 }
 
-/* Título interno */
+/* Título interno do accordion */
 .pedidos-historico .accordion-body h6 {
   font-weight: 600;
-  color: #333;
+  color: #4A235A; /* Texto em roxo escuro */
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
-/* Lista de produtos */
+/* Lista de produtos dentro do pedido */
 .pedidos-historico .list-group-item {
-  border: 1px solid #ddd;
+  border: 1px solid #EADCFE; /* Borda suave de lavanda */
   border-radius: 4px;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
 
-/* Badge de valor */
+/* Badge de valor (preço, status, etc) */
 .pedidos-historico .badge {
-  background-color: #d97706;
+  background-color: #E54F6D; /* Rosa vibrante para chamar atenção ao valor */
   font-weight: 600;
   font-size: 0.9rem;
+  color: #fff;
 }
 
-/* Texto verde de total */
+/* Texto de valor total (substituindo o verde) */
 .pedidos-historico .text-success {
-  color: #15803d !important;
+  color: #702EFF !important; /* Roxo intenso para manter a paleta */
   font-weight: 700;
 }

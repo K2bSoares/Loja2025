@@ -5,26 +5,27 @@
   border-radius: 3px;
   border: none;
   padding: 8px 12px;
+  transition: background-color 0.3s ease; /* Adicionado para uma transição suave */
 }
 
-/* Botão de detalhes (ex: botão neutro forte) */
+/* Botão de detalhes (roxo sofisticado) */
 .btn-detalhe {
-  background-color: #555; /* cinza escuro */
+  background-color: #8A4FFF; /* Roxo sofisticado */
   color: #fff;
 }
 
 .btn-detalhe:hover {
-  background-color: #333;
+  background-color: #702EFF; /* Roxo mais escuro para hover */
 }
 
-/* Botão de comprar (destaque amarelo queimado/laranja construção) */
+/* Botão de comprar (rosa vibrante) */
 .btn-comprar {
-  background-color: #d97706; /* laranja escuro */
+  background-color: #E54F6D; /* Rosa vibrante */
   color: #fff;
 }
 
 .btn-comprar:hover {
-  background-color: #b45309;
+  background-color: #C93756; /* Rosa mais escuro para hover */
 }
 
 /* Botão desativado */
@@ -34,6 +35,8 @@
   cursor: not-allowed;
   opacity: 0.7;
 }
+
+/* Texto de sucesso (alinhado com a nova paleta) */
 .text-success {
-  color: #b45309;
+  color: #8A4FFF; /* Roxo sofisticado para consistência */
 }

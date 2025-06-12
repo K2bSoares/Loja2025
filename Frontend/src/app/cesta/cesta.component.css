@@ -1,78 +1,93 @@
 /* Container principal da cesta */
 .cesta-compras {
-  border: 2px solid #ccc;
+  border: 2px solid #EADCFE; /* Borda suave de lavanda */
   background-color: #fff;
   border-radius: 6px;
   padding: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(74, 35, 90, 0.08); /* Sombra sutil com tom de roxo */
 }
 
 /* Título */
 .cesta-compras h3 {
-  color: #1f1f1f;
+  color: #4A235A; /* Roxo escuro para o título */
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
 /* Tabela */
 .cesta-compras .table thead {
-  background-color: #f3f4f6;
+  background-color: #F4F0FF; /* Lilás suave para o cabeçalho da tabela */
+}
+
+.cesta-compras .table th {
+    color: #4A235A; /* Cor do texto do cabeçalho */
+    font-weight: 600;
 }
 
 .cesta-compras .table td,
 .cesta-compras .table th {
   vertical-align: middle;
+  border-color: #EADCFE; /* Linhas da tabela com a cor da borda suave */
 }
 
 /* Imagem do produto */
 .cesta-compras .img-thumbnail {
-  border: 1px solid #aaa;
-  padding: 2px;
-  background-color: #f8f8f8;
+  border: 2px solid #EADCFE; /* Borda suave de lavanda */
+  padding: 4px;
+  background-color: #fff;
 }
 
-/* Valores */
+/* Valores e totais */
 .cesta-compras .text-success {
-  color: #15803d !important; /* verde escuro */
+  color: #702EFF !important; /* Roxo intenso para os valores, mantendo consistência */
+  font-weight: 700;
 }
 
-/* Botões */
+/* Estilo geral dos botões na cesta */
 .cesta-compras .btn {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 
+/* Botão de Remover Item */
 .cesta-compras .btn-danger {
-  background-color: #991b1b;
-  border: none;
+  background-color: #A33A52; /* Tom de vinho/bordô para ação de exclusão */
+  color: #fff;
 }
 
 .cesta-compras .btn-danger:hover {
-  background-color: #7f1d1d;
+  background-color: #8b3146;
 }
 
+/* Botão de Continuar Comprando */
 .cesta-compras .btn-secondary {
-  background-color: #6b7280;
-  border: none;
+  background-color: #8A4FFF; /* Roxo principal para ação secundária */
+  color: #fff;
 }
 
 .cesta-compras .btn-secondary:hover {
-  background-color: #4b5563;
+  background-color: #702EFF;
 }
 
+/* Botão de Finalizar Compra */
 .cesta-compras .btn-primary {
-  background-color: #d97706;
-  border: none;
+  background-color: #E54F6D; /* Rosa vibrante para a ação mais importante */
+  color: #fff;
 }
 
 .cesta-compras .btn-primary:hover {
-  background-color: #b45309;
+  background-color: #C93756;
 }
 
-/* Alerta */
+/* Alerta (ex: "Frete grátis aplicado") */
 .cesta-compras .alert {
-  background-color: #fef9c3;
-  color: #92400e;
-  border: 1px solid #fde68a;
+  background-color: #F4F0FF; /* Fundo lilás suave, seguindo o padrão de alertas informativos */
+  color: #4A235A; /* Texto em roxo escuro */
+  border: 1px solid #EADCFE; /* Borda suave de lavanda */
+  border-left: 5px solid #8A4FFF; /* Destaque na lateral com o roxo principal */
+  border-radius: 4px;
 }
